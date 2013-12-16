@@ -49,7 +49,7 @@ module Mumble
     end
 
     def stream_raw_audio(file)
-      raise NoSupportedCodec unless @codec
+      #raise NoSupportedCodec unless @codec
       AudioStream.new(@codec, 0, @encoder, file, @conn)
     end
 
